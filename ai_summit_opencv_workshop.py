@@ -33,12 +33,12 @@ def main():
         keep = int(len(matches) * keepPercent)
         matches = matches[:keep]
         # check to see if we should visualize the matched keypoints
-        if debug:
-            matchedVis = cv2.drawMatches(image, kpsA, template, kpsB,
-                matches, None)
-            matchedVis = imutils.resize(matchedVis, width=1000)
-            cv2.imshow("Matched Keypoints", matchedVis)
-            cv2.waitKey(0)
+        # if debug:
+        #     matchedVis = cv2.drawMatches(image, kpsA, template, kpsB,
+        #         matches, None)
+        #     matchedVis = imutils.resize(matchedVis, width=1000)
+        #     cv2.imshow("Matched Keypoints", matchedVis)
+        #     cv2.waitKey(0)
         # allocate memory for the keypoints (x, y)-coordinates from the
         # top matches -- we'll use these coordinates to compute our homography matrix
         ptsA = np.zeros((len(matches), 2), dtype="float")
