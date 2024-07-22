@@ -79,8 +79,8 @@ def main():
     cv2.createTrackbar(bilateral_onoff_, windowName, 0, 1, nothing)
     cv2.createTrackbar(image_thresholding_onoff_, windowName, 0, 1, nothing)
     
-    bad_image_path = r'E:\junonlee\tcb_sbb\data\opencv_workshop\01_missing_hole_01_rotated.jpg' # bad image sample
-    reference_image_path = r'E:\junonlee\tcb_sbb\data\opencv_workshop\01_golden_reference.jpg'
+    bad_image_path = r'01_missing_hole_01_rotated.jpg' # bad image sample
+    reference_image_path = r'01_golden_reference.jpg'
     
     img = cv2.imread(bad_image_path)
     ref_img = cv2.imread(reference_image_path) 
